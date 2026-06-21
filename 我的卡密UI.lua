@@ -55,7 +55,7 @@ Patriot.Links = {
 
 -- storage
 Patriot.Storage = {
-    FileName = "XIAOIX_Key",
+    FileName = "XIAOXI_Key",
     Remember = true,
     AutoLoad = true
 }
