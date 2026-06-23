@@ -10243,7 +10243,7 @@ IconThemed=ar.IconThemed,
 Folder=ar.Folder,
 Resizable=ar.Resizable~=false,
 Background = ar.Background or "rbxassetid://138273385987491",
-BackgroundImageTransparency=ar.BackgroundImageTransparency or 0,
+BackgroundImageTransparency=ar.BackgroundImageTransparency or 0.5,
 ShadowTransparency=ar.ShadowTransparency or 0.7,
 User=ar.User or{},
 
