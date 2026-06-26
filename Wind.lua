@@ -1,5 +1,5 @@
---小西新WindUI
-type ConfigType__DARKLUA_TYPE_a={
+--小西新WindUIfunc
+type ConfigType__DARKLUA_TYPE_a={  
 Object:Instance,
 Camera:Instance?,
 Interactive:boolean?,
@@ -6711,7 +6711,7 @@ ab.SetThemeTag(aq.Frame.Bar.Highlight.Glass,{ImageColor3="Text"},0.15)
 ad(
 aq.Frame.Bar.Highlight.Glass,
 0.15,
-{ImageTransparency=0.85},
+{ImageTransparency=1},
 Enum.EasingStyle.Quint,
 Enum.EasingDirection.Out
 ):Play()
