@@ -1,4 +1,4 @@
---小西新WindUIfunc
+--小西新WindUIfuckk
 type ConfigType__DARKLUA_TYPE_a={  
 Object:Instance,
 Camera:Instance?,
@@ -6613,7 +6613,7 @@ Name="Frame",
 },{
 ab.NewRoundFrame(an,"Squircle",{
 Size=UDim2.new(1,0,1,0),
-ImageTransparency=0,
+ImageTransparency=1,
 AnchorPoint=Vector2.new(0.5,0.5),
 Position=UDim2.new(0.5,0,0.5,0),
 Name="Bar",
