@@ -1,4 +1,4 @@
---小西新WindUIfuckk
+--小西新WindUI
 type ConfigType__DARKLUA_TYPE_a={  
 Object:Instance,
 Camera:Instance?,
@@ -6045,16 +6045,14 @@ Padding=UDim.new(0,8),
 local d,f=ac(ah.UICorner,"Squircle",{
 Size=UDim2.new(1,0,0,0),
 AutomaticSize="Y",
-ImageTransparency=ah.Color and 0.05 or(not ag.Window.NewElements and 0.93 or nil),
+ImageTransparency=ah.Color and 0.05 or(ag.Window.NewElements and 1 or 0.93),
 
 
 
 Parent=ag.Parent,
 ThemeTag={
 ImageColor3=not ah.Color and(ag.Window.NewElements and"ElementBackground"or"Text")or nil,
-ImageTransparency=not ah.Color
-and(ag.Window.NewElements and"ElementBackgroundTransparency"or nil)
-or nil,
+ImageTransparency=nil,
 },
 ImageColor3=ah.Color and(typeof(ah.Color)=="string"and Color3.fromHex(
 aa.Colors[ah.Color]
@@ -6613,7 +6611,7 @@ Name="Frame",
 },{
 ab.NewRoundFrame(an,"Squircle",{
 Size=UDim2.new(1,0,1,0),
-ImageTransparency=1,
+ImageTransparency=0,
 AnchorPoint=Vector2.new(0.5,0.5),
 Position=UDim2.new(0.5,0,0.5,0),
 Name="Bar",
