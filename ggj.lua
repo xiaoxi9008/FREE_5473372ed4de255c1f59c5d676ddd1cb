@@ -492,7 +492,7 @@ local function fn_010(arg_014)
 end
 
 local var_041, var_042 = {
-    activeTab = "Legitbot",
+    activeTab = "PC自瞄",
     menuOpen = true,
     menuKey = Enum.KeyCode.V,
     menuScale = 100,
@@ -1064,7 +1064,7 @@ LogoImage.AnchorPoint = var_005(1, 0)
 LogoImage.Size = UDim2.fromOffset(58, 58)
 LogoImage.Position = var_007(1, -16, 0, -5)
 LogoImage.BackgroundTransparency = 1
-LogoImage.Image = "https://raw.githubusercontent.com/xiaoxi9008/FREE_5473372ed4de255c1f59c5d676ddd1cb/refs/heads/main/Image_1782309765600_156.png"
+LogoImage.Image = "rbxassetid://92969088318635"
 LogoImage.ScaleType = Enum.ScaleType.Fit
 LogoImage.ImageTransparency = 4E-2
 LogoImage.Active = true
@@ -1204,7 +1204,7 @@ WatermarkMeta = Instance.new("TextLabel")
 WatermarkMeta.Size = var_007(1, -90, 1, 0)
 WatermarkMeta.Position = UDim2.fromOffset(80, 0)
 WatermarkMeta.BackgroundTransparency = 1
-WatermarkMeta.Text = "RISK: LEGIT"
+WatermarkMeta.Text = "当前状态: 演戏"
 WatermarkMeta.TextColor3 = var_016.TextDim
 WatermarkMeta.Font = Enum.Font.GothamBold
 WatermarkMeta.TextSize = 10
@@ -1228,7 +1228,7 @@ SpecLogo = Instance.new("ImageLabel")
 SpecLogo.Size = UDim2.fromOffset(16, 16)
 SpecLogo.Position = UDim2.fromOffset(8, 10)
 SpecLogo.BackgroundTransparency = 1
-SpecLogo.Image = "https://raw.githubusercontent.com/xiaoxi9008/FREE_5473372ed4de255c1f59c5d676ddd1cb/refs/heads/main/Image_1782309765600_156.png"
+SpecLogo.Image = "rbxassetid://92969088318635"
 SpecLogo.ScaleType = Enum.ScaleType.Fit
 SpecLogo.ImageColor3 = var_016.AccentSoft
 SpecLogo.ZIndex = 21
@@ -1302,7 +1302,7 @@ KeybindLogo = Instance.new("ImageLabel")
 KeybindLogo.Size = UDim2.fromOffset(16, 16)
 KeybindLogo.Position = UDim2.fromOffset(8, 4)
 KeybindLogo.BackgroundTransparency = 1
-KeybindLogo.Image = "https://raw.githubusercontent.com/xiaoxi9008/FREE_5473372ed4de255c1f59c5d676ddd1cb/refs/heads/main/Image_1782309765600_156.png"
+KeybindLogo.Image = "rbxassetid://92969088318635"
 KeybindLogo.ScaleType = Enum.ScaleType.Fit
 KeybindLogo.ImageColor3 = var_016.AccentSoft
 KeybindLogo.ZIndex = 21
@@ -1454,16 +1454,16 @@ end
 local function fn_033()
     for it_43, it_44 in ipairs(var_051)do
         if var_042[it_44] == true then
-            return "RAGE", var_016.Hot
+            return "演都不演了", var_016.Hot
         end
     end
     for it_45, it_46 in ipairs(var_052)do
         if var_042[it_46] == true then
-            return "SEMI", var_016.AccentSoft
+            return "半演戏", var_016.AccentSoft
         end
     end
 
-    return "LEGIT", var_016.TextDim
+    return "演戏", var_016.TextDim
 end
 local function fn_034()
     Watermark.Visible = var_042.showWatermark == true
@@ -1471,7 +1471,7 @@ local function fn_034()
 
     local var_083, var_084 = fn_033()
 
-    WatermarkMeta.Text = "RISK: " .. var_083
+    WatermarkMeta.Text = "当前状态: " .. var_083
     WatermarkMeta.TextColor3 = var_084
 
     local var_085 = 0
@@ -2147,57 +2147,58 @@ local function fn_052(arg_078, arg_079, arg_080, arg_081)
     fn_053()
 end
 local function fn_054()
-    local q, var_106 = fn_036("Legitbot")
+    local q, var_106 = fn_036("自动功能")
     local var_107, var_108 = fn_038(q, 0.5, 0)
     local var_109, var_110 = fn_038(q, 0.5, 0.5)
-    local var_111 = fn_039(var_107, "TriggerBot")
+    local var_111 = fn_039(var_107, "自动开枪")
 
-    fn_041(var_111, "Enable", "triggerBot")
-    fn_043(var_111, "Toggle Keybind", "triggerToggleKey")
-    fn_048(var_111, "Delay (ms)", "triggerDelay", 0, 500, 1)
+    fn_041(var_111, "启用", "triggerBot")
+    fn_043(var_111, "绑定按键", "triggerToggleKey")
+    fn_048(var_111, "延迟", "triggerDelay", 0, 500, 1)
 
-    local var_112 = fn_039(var_107, "Aimlock")
+    local var_112 = fn_039(var_107, "自瞄功能")
 
-    fn_041(var_112, "Enable", "aimlock")
-    fn_043(var_112, "Toggle Keybind", "aimlockToggleKey")
-    fn_043(var_112, "Aimlock HoldKey", "aimlockHoldKey")
-    fn_045(var_112, "Aimlock Method", "aimlockMethod", {
-        "Raw Mouse",
+    fn_041(var_112, "启用", "aimlock")
+    fn_043(var_112, "按键", "aimlockToggleKey")
+    fn_043(var_112, "按住按键", "aimlockHoldKey")
+    fn_045(var_112, "自瞄方式", "aimlockMethod", {
+        "原始鼠标",
     })
-    fn_048(var_112, "Aimlock Fov Size", "aimlockFov", 10, 1E3, 1)
-    fn_048(var_112, "Aim Smoothness", "aimSmoothness", 1, 10, 1)
-    fn_048(var_112, "Aim Jitter (Randomize)", "aimJitter", 0, 50, 1)
-    fn_041(var_112, "FlickBOT", "flickBot")
+    fn_048(var_112, "自瞄视野范围", "aimlockFov", 10, 1000, 1)
+    fn_048(var_112, "瞄准平滑度", "aimSmoothness", 1, 10, 1)
+    fn_048(var_112, "瞄准抖动", "aimJitter", 0, 50, 1)
+    fn_041(var_112, "甩枪", "flickBot")
 
-    local var_113 = fn_039(var_109, "Hitbox Expander")
+    local var_113 = fn_039(var_109, "命中判定扩大")
 
-    fn_041(var_113, "Enable", "hitboxExpander")
-    fn_043(var_113, "Toggle Keybind", "hitboxToggleKey")
-    fn_048(var_113, "Hitbox Size", "hitboxSize", 1, 3, 1)
-    fn_048(var_113, "Hitbox Transparency", "hitboxTransparency", 0, 100, 1)
+    fn_041(var_113, "启用", "hitboxExpander")
+    fn_043(var_113, "切换按键", "hitboxToggleKey")
+    fn_048(var_113, "判定大小", "hitboxSize", 1, 3, 1)
+    fn_048(var_113, "判定透明度", "hitboxTransparency", 0, 100, 1)
     fn_052(q, var_108, var_110, var_106)
 end
+
 local function fn_055()
-    local var_114, var_115 = fn_036("Ragebot")
+    local var_114, var_115 = fn_036("愤怒机器人")
     local var_116, var_117 = fn_038(var_114, 0.5, 0)
     local var_118, var_119 = fn_038(var_114, 0.5, 0.5)
-    local var_120 = fn_039(var_116, "Ragebot")
+    local var_120 = fn_039(var_116, "这是暴力功能瞎鸡巴乱开封号和无关")
 
-    fn_041(var_120, "Master Rage Mode", "rageMode")
-    fn_043(var_120, "Rage Toggle Key", "rageToggleKey")
+    fn_041(var_120, "Ragebot总开关", "rageMode")
+    fn_043(var_120, "愤怒机器人切换键", "rageToggleKey")
 
-    local var_121 = fn_039(var_116, "Weapon Mods")
+    local var_121 = fn_039(var_116, "武器修改（这个算是内存封了也和我无关）")
 
-    fn_041(var_121, "Memory No Recoil", "memoryNoRecoil")
-    fn_041(var_121, "No Spread", "noSpread")
-    fn_041(var_121, "RapidFire", "rapidFire")
-    fn_048(var_121, "Rapid Fire Delay (ms)", "rapidFireDelay", 1, 500, 1)
-    fn_041(var_121, "Auto Clicker (Hold LMB)", "autoClicker")
-    fn_048(var_121, "Auto Click Delay (ms)", "autoClickDelay", 10, 500, 1)
-    fn_041(var_121, "Instant Reload", "instantReload")
-    fn_041(var_121, "Insta Equip", "instaEquip")
+    fn_041(var_121, "内存无后坐力", "memoryNoRecoil")
+    fn_041(var_121, "无散布", "noSpread")
+    fn_041(var_121, "快速射击", "rapidFire")
+    fn_048(var_121, "快速射击延迟", "rapidFireDelay", 1, 500, 1)
+    fn_041(var_121, "自动连点", "autoClicker")
+    fn_048(var_121, "连点延迟", "autoClickDelay", 10, 500, 1)
+    fn_041(var_121, "即时换弹", "instantReload")
+    fn_041(var_121, "即时装备", "instaEquip")
 
-    local var_122, Instance_new_49 = fn_039(var_118, "Silent Aim"), Instance.new("TextLabel")
+    local var_122, Instance_new_49 = fn_039(var_118, "静默自瞄"), Instance.new("TextLabel")
 
     Instance_new_49.Size = var_007(1, 0, 0, 16)
     Instance_new_49.BackgroundTransparency = 1
@@ -2207,10 +2208,10 @@ local function fn_055()
     Instance_new_49.Parent = var_122
 
     if var_015 then
-        Instance_new_49.Text = "Status: Supported (" .. var_013 .. ")"
+        Instance_new_49.Text = "设备状态: 支持 (" .. var_013 .. ")"
         Instance_new_49.TextColor3 = var_016.Accent
     else
-        Instance_new_49.Text = "Status: NO SUPPORT"
+        Instance_new_49.Text = "设备状态: 不支持"
         Instance_new_49.TextColor3 = var_016.Hot
 
         local Instance_new_50 = Instance.new("Frame")
@@ -3116,17 +3117,17 @@ fn_070()
 fn_065()
 
 local var_206 = {
-    "Legitbot",
-    "Ragebot",
-    "Visuals",
-    "World",
-    "GunSkins",
-    "Knives",
-    "Gloves",
-    "Mics",
-    "Model Changer",
-    "Configs",
-    "Settings",
+    "瞄准",
+    "愤怒机器人",
+    "ESP",
+    "ESP",
+    "枪械美化",
+    "刀美化",
+    "手套美化",
+    "其他",
+    "模型更换",
+    "配置",
+    "设置",
 }
 
 for it_83, it_84 in ipairs(var_206)do
@@ -3320,7 +3321,7 @@ local function fn_077(arg_109, arg_110, arg_111)
     Instance_new_93.Size = UDim2.fromOffset(36, 36)
     Instance_new_93.Position = var_007(0, 12, 0.5, -18)
     Instance_new_93.BackgroundTransparency = 1
-    Instance_new_93.Image = "https://raw.githubusercontent.com/xiaoxi9008/FREE_5473372ed4de255c1f59c5d676ddd1cb/refs/heads/main/Image_1782309765600_156.png"
+    Instance_new_93.Image = "rbxassetid://92969088318635"
     Instance_new_93.ScaleType = Enum.ScaleType.Fit
     Instance_new_93.ImageTransparency = 0.1
     Instance_new_93.Parent = Instance_new_91
@@ -7884,7 +7885,7 @@ if MouseEnabled then
     Instance_new_145.Size = UDim2.fromOffset(45, 45)
     Instance_new_145.Position = var_007(0, 15, 0.5, -22)
     Instance_new_145.BackgroundColor3 = var_016.Main
-    Instance_new_145.Image = "https://raw.githubusercontent.com/xiaoxi9008/FREE_5473372ed4de255c1f59c5d676ddd1cb/refs/heads/main/Image_1782309765600_156.png"
+    Instance_new_145.Image = "rbxassetid://92969088318635"
     Instance_new_145.ScaleType = Enum.ScaleType.Fit
     Instance_new_145.Visible = false
     Instance_new_145.ZIndex = 100
