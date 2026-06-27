@@ -1,5 +1,3 @@
-
-
 local char, byte, bxor = (string.char), (string.byte), (bit32.bxor)
 local fn_001 = function(arg_001, arg_002)
     local var_001 = ''
