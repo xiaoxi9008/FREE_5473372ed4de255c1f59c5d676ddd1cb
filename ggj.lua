@@ -1050,7 +1050,7 @@ TitleWrap.Parent = TopBar
 TitleLabel = Instance.new("TextLabel")
 TitleLabel.Size = UDim2.fromScale(1, 1)
 TitleLabel.BackgroundTransparency = 1
-TitleLabel.Text = "WYVERN"
+TitleLabel.Text = "XIAOXI SCRIPT"
 TitleLabel.TextColor3 = var_016.AccentSoft
 TitleLabel.Font = Enum.Font.GothamBlack
 TitleLabel.TextSize = 19
@@ -1066,7 +1066,7 @@ LogoImage.AnchorPoint = var_005(1, 0)
 LogoImage.Size = UDim2.fromOffset(58, 58)
 LogoImage.Position = var_007(1, -16, 0, -5)
 LogoImage.BackgroundTransparency = 1
-LogoImage.Image = "rbxassetid://80180896525224"
+LogoImage.Image = "https://raw.githubusercontent.com/xiaoxi9008/FREE_5473372ed4de255c1f59c5d676ddd1cb/refs/heads/main/Image_1782309765600_156.png"
 LogoImage.ScaleType = Enum.ScaleType.Fit
 LogoImage.ImageTransparency = 4E-2
 LogoImage.Active = true
@@ -1195,7 +1195,7 @@ WatermarkTitle = Instance.new("TextLabel")
 WatermarkTitle.Size = var_007(0, 70, 1, 0)
 WatermarkTitle.Position = UDim2.fromOffset(10, 0)
 WatermarkTitle.BackgroundTransparency = 1
-WatermarkTitle.Text = "WYVERN"
+WatermarkTitle.Text = "XIAOXI SCRIPT"
 WatermarkTitle.TextColor3 = var_016.AccentSoft
 WatermarkTitle.Font = Enum.Font.GothamBlack
 WatermarkTitle.TextSize = 12
@@ -1230,7 +1230,7 @@ SpecLogo = Instance.new("ImageLabel")
 SpecLogo.Size = UDim2.fromOffset(16, 16)
 SpecLogo.Position = UDim2.fromOffset(8, 10)
 SpecLogo.BackgroundTransparency = 1
-SpecLogo.Image = "rbxassetid://80180896525224"
+SpecLogo.Image = "https://raw.githubusercontent.com/xiaoxi9008/FREE_5473372ed4de255c1f59c5d676ddd1cb/refs/heads/main/Image_1782309765600_156.png"
 SpecLogo.ScaleType = Enum.ScaleType.Fit
 SpecLogo.ImageColor3 = var_016.AccentSoft
 SpecLogo.ZIndex = 21
@@ -1304,7 +1304,7 @@ KeybindLogo = Instance.new("ImageLabel")
 KeybindLogo.Size = UDim2.fromOffset(16, 16)
 KeybindLogo.Position = UDim2.fromOffset(8, 4)
 KeybindLogo.BackgroundTransparency = 1
-KeybindLogo.Image = "rbxassetid://80180896525224"
+KeybindLogo.Image = "https://raw.githubusercontent.com/xiaoxi9008/FREE_5473372ed4de255c1f59c5d676ddd1cb/refs/heads/main/Image_1782309765600_156.png"
 KeybindLogo.ScaleType = Enum.ScaleType.Fit
 KeybindLogo.ImageColor3 = var_016.AccentSoft
 KeybindLogo.ZIndex = 21
@@ -3322,7 +3322,7 @@ local function fn_077(arg_109, arg_110, arg_111)
     Instance_new_93.Size = UDim2.fromOffset(36, 36)
     Instance_new_93.Position = var_007(0, 12, 0.5, -18)
     Instance_new_93.BackgroundTransparency = 1
-    Instance_new_93.Image = "rbxassetid://80180896525224"
+    Instance_new_93.Image = "https://raw.githubusercontent.com/xiaoxi9008/FREE_5473372ed4de255c1f59c5d676ddd1cb/refs/heads/main/Image_1782309765600_156.png"
     Instance_new_93.ScaleType = Enum.ScaleType.Fit
     Instance_new_93.ImageTransparency = 0.1
     Instance_new_93.Parent = Instance_new_91
@@ -3368,7 +3368,7 @@ local function fn_077(arg_109, arg_110, arg_111)
     end)
 end
 
-fn_077("WYVERN", "Press the V key to close the interface.\nHave a good game!", 6)
+fn_077("XIAOXI SCRIPT", "电脑按G键关闭界面\n祝你游玩愉快", 6)
 
 local RunService, Workspace = game:GetService("RunService"), game:GetService("Workspace")
 local CurrentCamera, FindFirstChild_6 = Workspace.CurrentCamera, Workspace:FindFirstChild("Characters")
@@ -7886,7 +7886,7 @@ if MouseEnabled then
     Instance_new_145.Size = UDim2.fromOffset(45, 45)
     Instance_new_145.Position = var_007(0, 15, 0.5, -22)
     Instance_new_145.BackgroundColor3 = var_016.Main
-    Instance_new_145.Image = "rbxassetid://80180896525224"
+    Instance_new_145.Image = "https://raw.githubusercontent.com/xiaoxi9008/FREE_5473372ed4de255c1f59c5d676ddd1cb/refs/heads/main/Image_1782309765600_156.png"
     Instance_new_145.ScaleType = Enum.ScaleType.Fit
     Instance_new_145.Visible = false
     Instance_new_145.ZIndex = 100
@@ -8215,7 +8215,7 @@ spawn_2(function()
 
         if var_533 == "Notification" or var_533 == "Both" then
             spawn_2(function()
-                fn_077("WYVERN", "Hit " .. arg_220 .. " for " .. tostring(var_534) .. " dmg", 2.5)
+                fn_077("XIAOXI SCRIPT", "Hit " .. arg_220 .. " for " .. tostring(var_534) .. " dmg", 2.5)
             end)
         end
         if var_533 == "Chat" or var_533 == "Both" then
