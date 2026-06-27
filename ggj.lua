@@ -998,7 +998,7 @@ Backdrop.BackgroundColor3 = fromRGB(0, 0, 0)
 Backdrop.BackgroundTransparency = 0.45
 Backdrop.Parent = Root
 
-local GetAttribute = var_005(400, 300)
+local GetAttribute = var_005(820,520)
 
 Main = Instance.new("Frame")
 Main.AnchorPoint = var_005(0.5, 0.5)
