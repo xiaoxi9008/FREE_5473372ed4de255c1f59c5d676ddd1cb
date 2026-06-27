@@ -492,7 +492,7 @@ local function fn_010(arg_014)
 end
 
 local var_041, var_042 = {
-    activeTab = "PC自瞄",
+    activeTab = "Legitbot",
     menuOpen = true,
     menuKey = Enum.KeyCode.V,
     menuScale = 100,
@@ -1204,7 +1204,7 @@ WatermarkMeta = Instance.new("TextLabel")
 WatermarkMeta.Size = var_007(1, -90, 1, 0)
 WatermarkMeta.Position = UDim2.fromOffset(80, 0)
 WatermarkMeta.BackgroundTransparency = 1
-WatermarkMeta.Text = "当前状态: 演戏"
+WatermarkMeta.Text = "RISK: LEGIT"
 WatermarkMeta.TextColor3 = var_016.TextDim
 WatermarkMeta.Font = Enum.Font.GothamBold
 WatermarkMeta.TextSize = 10
@@ -1454,16 +1454,16 @@ end
 local function fn_033()
     for it_43, it_44 in ipairs(var_051)do
         if var_042[it_44] == true then
-            return "演都不演了", var_016.Hot
+            return "RAGE", var_016.Hot
         end
     end
     for it_45, it_46 in ipairs(var_052)do
         if var_042[it_46] == true then
-            return "半演戏", var_016.AccentSoft
+            return "SEMI", var_016.AccentSoft
         end
     end
 
-    return "演戏", var_016.TextDim
+    return "LEGIT", var_016.TextDim
 end
 local function fn_034()
     Watermark.Visible = var_042.showWatermark == true
@@ -1471,7 +1471,7 @@ local function fn_034()
 
     local var_083, var_084 = fn_033()
 
-    WatermarkMeta.Text = "当前状态: " .. var_083
+    WatermarkMeta.Text = "RISK: " .. var_083
     WatermarkMeta.TextColor3 = var_084
 
     local var_085 = 0
@@ -2147,58 +2147,57 @@ local function fn_052(arg_078, arg_079, arg_080, arg_081)
     fn_053()
 end
 local function fn_054()
-    local q, var_106 = fn_036("自动功能")
+    local q, var_106 = fn_036("Legitbot")
     local var_107, var_108 = fn_038(q, 0.5, 0)
     local var_109, var_110 = fn_038(q, 0.5, 0.5)
-    local var_111 = fn_039(var_107, "自动开枪")
+    local var_111 = fn_039(var_107, "TriggerBot")
 
-    fn_041(var_111, "启用", "triggerBot")
-    fn_043(var_111, "绑定按键", "triggerToggleKey")
-    fn_048(var_111, "延迟", "triggerDelay", 0, 500, 1)
+    fn_041(var_111, "Enable", "triggerBot")
+    fn_043(var_111, "Toggle Keybind", "triggerToggleKey")
+    fn_048(var_111, "Delay (ms)", "triggerDelay", 0, 500, 1)
 
-    local var_112 = fn_039(var_107, "自瞄功能")
+    local var_112 = fn_039(var_107, "Aimlock")
 
-    fn_041(var_112, "启用", "aimlock")
-    fn_043(var_112, "按键", "aimlockToggleKey")
-    fn_043(var_112, "按住按键", "aimlockHoldKey")
-    fn_045(var_112, "自瞄方式", "aimlockMethod", {
-        "原始鼠标",
+    fn_041(var_112, "Enable", "aimlock")
+    fn_043(var_112, "Toggle Keybind", "aimlockToggleKey")
+    fn_043(var_112, "Aimlock HoldKey", "aimlockHoldKey")
+    fn_045(var_112, "Aimlock Method", "aimlockMethod", {
+        "Raw Mouse",
     })
-    fn_048(var_112, "自瞄视野范围", "aimlockFov", 10, 1000, 1)
-    fn_048(var_112, "瞄准平滑度", "aimSmoothness", 1, 10, 1)
-    fn_048(var_112, "瞄准抖动", "aimJitter", 0, 50, 1)
-    fn_041(var_112, "甩枪", "flickBot")
+    fn_048(var_112, "Aimlock Fov Size", "aimlockFov", 10, 1E3, 1)
+    fn_048(var_112, "Aim Smoothness", "aimSmoothness", 1, 10, 1)
+    fn_048(var_112, "Aim Jitter (Randomize)", "aimJitter", 0, 50, 1)
+    fn_041(var_112, "FlickBOT", "flickBot")
 
-    local var_113 = fn_039(var_109, "命中判定扩大")
+    local var_113 = fn_039(var_109, "Hitbox Expander")
 
-    fn_041(var_113, "启用", "hitboxExpander")
-    fn_043(var_113, "切换按键", "hitboxToggleKey")
-    fn_048(var_113, "判定大小", "hitboxSize", 1, 3, 1)
-    fn_048(var_113, "判定透明度", "hitboxTransparency", 0, 100, 1)
+    fn_041(var_113, "Enable", "hitboxExpander")
+    fn_043(var_113, "Toggle Keybind", "hitboxToggleKey")
+    fn_048(var_113, "Hitbox Size", "hitboxSize", 1, 3, 1)
+    fn_048(var_113, "Hitbox Transparency", "hitboxTransparency", 0, 100, 1)
     fn_052(q, var_108, var_110, var_106)
 end
-
 local function fn_055()
-    local var_114, var_115 = fn_036("愤怒机器人")
+    local var_114, var_115 = fn_036("Ragebot")
     local var_116, var_117 = fn_038(var_114, 0.5, 0)
     local var_118, var_119 = fn_038(var_114, 0.5, 0.5)
-    local var_120 = fn_039(var_116, "这是暴力功能瞎鸡巴乱开封号和无关")
+    local var_120 = fn_039(var_116, "Ragebot")
 
-    fn_041(var_120, "Ragebot总开关", "rageMode")
-    fn_043(var_120, "愤怒机器人切换键", "rageToggleKey")
+    fn_041(var_120, "Master Rage Mode", "rageMode")
+    fn_043(var_120, "Rage Toggle Key", "rageToggleKey")
 
-    local var_121 = fn_039(var_116, "武器修改（这个算是内存封了也和我无关）")
+    local var_121 = fn_039(var_116, "Weapon Mods")
 
-    fn_041(var_121, "内存无后坐力", "memoryNoRecoil")
-    fn_041(var_121, "无散布", "noSpread")
-    fn_041(var_121, "快速射击", "rapidFire")
-    fn_048(var_121, "快速射击延迟", "rapidFireDelay", 1, 500, 1)
-    fn_041(var_121, "自动连点", "autoClicker")
-    fn_048(var_121, "连点延迟", "autoClickDelay", 10, 500, 1)
-    fn_041(var_121, "即时换弹", "instantReload")
-    fn_041(var_121, "即时装备", "instaEquip")
+    fn_041(var_121, "Memory No Recoil", "memoryNoRecoil")
+    fn_041(var_121, "No Spread", "noSpread")
+    fn_041(var_121, "RapidFire", "rapidFire")
+    fn_048(var_121, "Rapid Fire Delay (ms)", "rapidFireDelay", 1, 500, 1)
+    fn_041(var_121, "Auto Clicker (Hold LMB)", "autoClicker")
+    fn_048(var_121, "Auto Click Delay (ms)", "autoClickDelay", 10, 500, 1)
+    fn_041(var_121, "Instant Reload", "instantReload")
+    fn_041(var_121, "Insta Equip", "instaEquip")
 
-    local var_122, Instance_new_49 = fn_039(var_118, "静默自瞄"), Instance.new("TextLabel")
+    local var_122, Instance_new_49 = fn_039(var_118, "Silent Aim"), Instance.new("TextLabel")
 
     Instance_new_49.Size = var_007(1, 0, 0, 16)
     Instance_new_49.BackgroundTransparency = 1
@@ -2208,10 +2207,10 @@ local function fn_055()
     Instance_new_49.Parent = var_122
 
     if var_015 then
-        Instance_new_49.Text = "设备状态: 支持 (" .. var_013 .. ")"
+        Instance_new_49.Text = "Status: Supported (" .. var_013 .. ")"
         Instance_new_49.TextColor3 = var_016.Accent
     else
-        Instance_new_49.Text = "设备状态: 不支持"
+        Instance_new_49.Text = "Status: NO SUPPORT"
         Instance_new_49.TextColor3 = var_016.Hot
 
         local Instance_new_50 = Instance.new("Frame")
@@ -3117,17 +3116,17 @@ fn_070()
 fn_065()
 
 local var_206 = {
-    "瞄准",
-    "愤怒机器人",
-    "ESP",
-    "ESP",
-    "枪械美化",
-    "刀美化",
-    "手套美化",
-    "其他",
-    "模型更换",
-    "配置",
-    "设置",
+    "Legitbot",
+    "Ragebot",
+    "Visuals",
+    "World",
+    "GunSkins",
+    "Knives",
+    "Gloves",
+    "Mics",
+    "Model Changer",
+    "Configs",
+    "Settings",
 }
 
 for it_83, it_84 in ipairs(var_206)do
