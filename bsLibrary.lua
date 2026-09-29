@@ -270,7 +270,7 @@ local Library = {
     OriginalMinSize = Vector2.new(480, 360),
     MinSize = Vector2.new(480, 360),
     DPIScale = 1,
-    CornerRadius = 4,
+    CornerRadius = 12,
 
     --// Scheme \\--
     IsLightTheme = false,
@@ -392,7 +392,7 @@ local Templates = {
         SearchbarSize = UDim2.fromScale(1, 1),
         GlobalSearch = false,
 
-        CornerRadius = 4,
+        CornerRadius = 12,
         NotifySide = "Right",
         ShowCustomCursor = true,
 
@@ -3508,7 +3508,7 @@ do
         local Label = WatermarkLabel.Label
 
         Label.AnchorPoint = Vector2.new(1, 0)
-        Label.Position = UDim2.new(1, -12, 0, 6)
+        Label.Position = UDim2.new(1, -4, 0, 4)
 
         for _, Descendant in Label:GetDescendants() do
             if Descendant:IsA("UICorner") then
@@ -3533,7 +3533,7 @@ do
         -- 文本变化后保持右上角对齐
         local Label = WatermarkLabel.Label
         Label.AnchorPoint = Vector2.new(1, 0)
-        Label.Position = UDim2.new(1, -12, 0, 6)
+        Label.Position = UDim2.new(1, -4, 0, 4)
     end
 
     function Library:SetWatermarkVisibility(Visible: boolean)
