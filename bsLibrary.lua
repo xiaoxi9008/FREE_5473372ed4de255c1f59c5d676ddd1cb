@@ -3236,7 +3236,7 @@ function Library:AddDraggableButton(...)
     table.insert(
         Library.Corners,
         New("UICorner", {
-            CornerRadius = UDim.new(0, Library.CornerRadius),
+            CornerRadius = UDim.new(1, 0),
             Parent = Button,
         })
     )
@@ -3508,7 +3508,7 @@ do
         local Label = WatermarkLabel.Label
 
         Label.AnchorPoint = Vector2.new(1, 0)
-        Label.Position = UDim2.new(1, -12, 0, 12)
+        Label.Position = UDim2.new(1, -12, 0, 6)
 
         for _, Descendant in Label:GetDescendants() do
             if Descendant:IsA("UICorner") then
@@ -3533,7 +3533,7 @@ do
         -- 文本变化后保持右上角对齐
         local Label = WatermarkLabel.Label
         Label.AnchorPoint = Vector2.new(1, 0)
-        Label.Position = UDim2.new(1, -12, 0, 12)
+        Label.Position = UDim2.new(1, -12, 0, 6)
     end
 
     function Library:SetWatermarkVisibility(Visible: boolean)
